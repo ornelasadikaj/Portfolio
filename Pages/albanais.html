@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albanais</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="Script/script.js"></script>
+    <script src="https://kit.fontawesome.com/708f8b79ed.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  
+  <!----------------------------page d'acceuil-------------------------- -->
+
+ <section class="header">
+    <div class="container">
+        <nav>
+            <img src="../Images/portfolio.png" class="logo">
+            <ul>
+                <li> <a href="#header">PREZENTIM</a></li>
+                <li><a href="#About">MË SHUMË</a></li>
+                <li><a href="#contact">KONTAKT</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <img src="../Images/icone.png" class="icone">
+            <p class="language">Zgjidhni gjuhën</p>
+            <table class="Flag" align="center" width="05%" border="0.5" cellspacing="1" cellpadding="1"><tr><td> <a href="../index.html"> <img src="../Images/ang.png" width="40" height="40"></a></td><td><a href="./francais.html"> <img src="../Images/fr.png"width="64" height="38"></a></a></td></tr></table>
+            <p class="presentation"> E kam emrin Ornela Sadikaj <br> Jam 18 vjecare <br>Studente ne Informatik</p>
+
+        </div>
+
+    </div>
+</section> 
+     
+
+
+             <!-------------------- ABOUT ME PAGE ----------------------->
+
+     
+    <section id="About" class="ProfCareer">
+        <div class="container">
+            <div class="row">
+                <div class="ProfCareer-col-1"></div>
+                <img src="../Images/image.png">
+
+                <div class="ProfCareer-col-2"></div>
+                <h1 class="subtitle">MË SHUMË</h1>
+               
+                              
+                <div class="profCar">
+                    <li class="degree">
+                        <a>Diploma</a>
+                        <ul class="dropdown">
+                        <li>
+                            <p>Diplom te Administrates dhe Menaxhimit</p>
+                        </li>
+                        </ul>
+                    </li>    
+                    <li class="intern">
+                        <a>Praktik</a>
+                        <ul class="dropdown">
+                        <li>
+                            <p> Brit Primo Hotel</p>
+                            <p>Brisach Pierre et Marbre</p>
+                            <p>Vinci Facilities</p>
+                        </li>
+                        </ul>
+                    </li>
+                    <li class="School">
+                        <a>Shkolla</a>
+                        <ul class="dropdown">
+                        <li>
+                            <p>Saint Bénigne, France</p>
+                            <p> Shkoll e lartë te Informatikes</p>
+                            <button class="ref">
+                                <a href="https://enqdip.sup.adc.education.fr/bts/referentiel/BTS_ServicesInformatiquesOrganisations.pdf">Më shumë</a>
+                            </button>
+                        </li>
+                        </ul>
+                    </li>
+                    <li class="Skills">
+                        <a>Kompetenca</a>
+                        <ul class="dropdown">
+                        <li>
+                            <p>HTML</p>
+                            <p>CSS</p>
+                            <p>JAVASCRIPT</p>
+                            <p>UNITY</p>
+                            <p>C#</p>
+                            <p>WORD</p>
+                            <p>EXCEL</p>
+                        </li>
+                        </ul>
+                    </li>   
+                    <li class="Hobbies">
+                        <a>Pasjonet</a>
+                        <ul class="dropdown">
+                        <li>
+                            <p>Jam pasjonuar pas makinave</p>
+                            <p>Më pëlqen të mësoj gjuhë të reja</p>
+                            <p>Bëj stervitje ne palestër</p>
+                        </li>
+                        </ul>
+                    </li>                 
+                </div>
+            </div>
+        </div>
+
+        <!------------------------------ Contact ------------------------------>
+
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="subtitle">KONTAKT</h1>
+                        <p><i class="fa-sharp fa-solid fa-paper-plane"></i>ornela.sadikaj@hotmail.com</p>
+                        <p> <i class="fa-solid fa-phone-volume"></i>0783989071</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/ornela-sadikaj/"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.tiktok.com/@ornela.sadikaj?lang=en"><i class="fab fa-tiktok"></i></a>
+                            <a href="https://mobile.twitter.com/ornela_sdjj"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/ornela.sadikaj/"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-right">
+                        <form onsubmit="sendEmail(); reset(); return false;">
+                            <input type="text" name="Name" placeholder="Emri" required>
+                            <input type="email" name="Email" placeholder="Email" required>
+                            <textarea name="Message" rows="6" placeholder="Mesazhi"></textarea>
+                            <button type="submit" class="bnt btn2">Dërgo mesazhin</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p> Copyright © Faleminderit që vizituat faqen time.</p>
+            </div>
+        </div> 
+
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            function sendEmail(){
+                Email.send({
+                    Host : "smtp.hotmail.com",
+                    Username : "ornela_hope@hotmail.com",
+                    Password : "Wiqaxi)5",
+                    To : 'ornela.sadikaj@hotmail.com"',
+                    From : document.getElementById("email").value,
+                    Subject : "New contact form Enquiry",
+                    Body : "And this is the body"
+                }).then(
+                message => alert(message)
+                );  
+            }
+        </script>
+
+</body>
+</html>

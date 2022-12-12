@@ -1,0 +1,279 @@
+/* page d'acceuil */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: url(../Images/interconnexion.png);
+    background-color: #296061;
+}
+
+
+.container{
+    padding: 05px 05%;
+    
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 210px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition:0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    margin-top: 50px;
+    margin-left: 900px;
+    font-size: 20px;
+}
+
+.presentation{
+    margin-left: -150%;
+    margin-top: -50px;
+    color: white;
+    font-size: 28px;
+    font-style: italic;
+}
+
+.icone{
+    width: 380px;
+    margin-top: 60px;
+}
+
+.language{
+    margin-left: 15%;
+    margin-top: -55%;
+    font-style: italic;
+    color: #296061;
+    font-size: 30px;
+}
+
+.Flag{
+    margin-left: 27%;
+    margin-top: 5%;
+}
+
+/* page professionnal career */
+
+
+.ProfCareer{
+    margin-top: 15em;
+    position: relative;
+   
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+} 
+
+.subtitle{
+    font-size: 60px;
+    font-style: italic;
+    color: white;
+    font-weight: lighter;
+    max-height: 60px;
+    
+}
+
+.profCar{
+    position: relative;
+    left: -300px;
+    display: flex;
+    align-items: center;  
+    color: white;
+}
+
+.profCar a {
+   padding: 20px;
+   font-size: 17px;
+}
+
+li{
+    list-style: none;
+}
+.degree {
+    position: relative;
+}
+
+.degree:hover .dropdown {
+    display: block;
+}
+
+.intern {
+    position: relative;
+}
+
+.intern:hover .dropdown {
+    display: block;
+}
+
+.School {
+    position: relative;
+}
+
+.School:hover .dropdown {
+    display: block;
+}
+
+.Skills {
+    position: relative;
+}
+
+.Skills:hover .dropdown {
+    display: block;
+}
+
+.Hobbies {
+    position: relative;
+}
+
+.Hobbies:hover .dropdown {
+    display: block;
+}
+
+
+/* ----------dropdown---------- */
+
+.dropdown {
+    background: transparent;
+    padding: 1em 0;
+    position: absolute;
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+}
+
+.dropdown li+li {
+    margin-top: 10px;
+}
+
+.dropdown li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+}
+
+
+.ref{
+    background-color: #296061;
+    border-radius: 7px;
+    border-color: white;
+}
+.ref a {
+    color: white;
+    font-weight: lighter;
+}
+
+
+/* ---------- contact ----------- */
+
+#contact{
+
+    margin-top: 120px;
+}
+
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+
+.contact-left p {
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: white;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 25px;
+    margin-right: 15px;
+    color: white;
+    display:inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: rgb(0, 0, 0);
+    transform: translateY(-5px);
+}
+.btn.btn2{
+    display: inline-block;
+    background: black;
+}
+
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0; 
+    outline: none;
+    background: white;
+    padding: 15px;
+    margin: 15px 0;
+    color:black;
+    font-size: 18px;
+    border-radius: 10px;
+
+}
+
+form .btn2{
+    padding: 14px 60px;
+    font-size: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    margin-left: 80%;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background: #5a7d80;
+    font-weight: 300;
+    margin-top: 30px;
+}
+
